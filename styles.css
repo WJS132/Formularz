@@ -136,4 +136,12 @@ textarea {
         padding: 10px;
         margin: auto auto auto -2rem;
     }
+    #name, #email, #number{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #name-label, #email-label, #number-label{
+        width: 50%;
+        margin: 0 auto;
+    }
 }
