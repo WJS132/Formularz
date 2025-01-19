@@ -135,4 +135,7 @@ textarea {
         max-width: 100%;
         padding: 10px;
     }
+    #species-choice{
+        margin: 0 auto;
+    }
 }
