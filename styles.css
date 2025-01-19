@@ -47,10 +47,13 @@ input, textarea{
 }
 #species-choice label{
     display: block;
+    margin: 5px 0;
+    text-align: left;
 }
 #species-choice{
-    width: 42%;
-    margin: 0 25% 0 33%;
+    width: 50%;
+    max-width: 600px;
+    margin: 0 17% 0 33%;
 }
 #paragraf1, #paragraf2, #paragraf3{
     text-align: center;
@@ -94,7 +97,7 @@ input[type="checkbox"]:checked {
 #submit-div{
     display: block;
     text-align: center;
-    margin: 20px 24% 0 26%;
+    margin: 20px auto 0 auto;
     width: 4rem;
     width: 50%;
     height: 40px;
@@ -117,11 +120,14 @@ input[type="radio"]:hover {
 }
 input[type="checkbox"]:hover {  
     background-color: rgb(0, 87, 87); 
+    margin-right: 10px;
 }
 textarea {
     width: 100%; 
     box-sizing: border-box;
     max-width: 100%;
+    display: block;
+    margin: auto auto auto -3rem;
 }
 @media (max-width: 600px) {
     textarea {
