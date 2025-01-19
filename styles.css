@@ -118,3 +118,15 @@ input[type="radio"]:hover {
 input[type="checkbox"]:hover {  
     background-color: rgb(0, 87, 87); 
 }
+textarea {
+    width: 100%; 
+    box-sizing: border-box;
+    max-width: 100%;
+}
+@media (max-width: 600px) {
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+}
