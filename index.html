@@ -3,43 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Orbs on screen</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #change-amount{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: clamp(30px, 40vw, 100vw);
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
-    <div id="container">
-        <h1 id="title">The most beautiful mantids species - 2024 ranking.</h1>
-        <p id="description">We want to choose the most beautiful mantids species based on people opinions!</p>
-        <form id="survey-form">  
-            <label for="name" id="name-label"> Name<input type="text" id="name" placeholder="Write your name here" required></label>
-            <label for="email" id="email-label">E-mail<input type="email" id="email" placeholder="Write you e-mail here" required></label>
-            <label for="number" id="number-label">Age (optional)<input type="number" id="number" min="3" max="120" placeholder="Write you age here"></label>
-            <p id="paragraf1">Which of these species is the most beautiful for you?</p>
-            <select id="dropdown" required>
-                <option value="" selected disabled>Choose one of these</option>
-                <option value="1">Phyllocrania Paradoxa</option>
-                <option value="2">Creobroter Gemmatus</option>
-                <option value="3">Rhombodera Kirbyi</option>
-                <option value="4">Pseudocreobotra Wahlbergi</option>
-                <option value="5">Sibylla Pretiosa</option>
-            </select>
-            <p id="paragraf2">Are you a mantids breeder?</p>
-            <label id="radiowe1"><input type="radio" name="breed" value="1"> Yes</label>
-            <label id="radiowe2"><input type="radio" name="breed" value="0"> No</label>
-            <p id="paragraf3">Which species are you breeding?</p>
-            <div id="species-choice">
-                <label><input type="checkbox" value="1"> Phyllocrania Paradoxa</label>
-                <label><input type="checkbox" value="2"> Creobroter Gemmatus</label>
-                <label><input type="checkbox" value="3"> Rhombodera Kirbyi</label>
-                <label><input type="checkbox" value="4"> Pseudocreobotra Wahlbergi</label>
-                <label><input type="checkbox" value="5"> Sibylla Pretiosa</label>
-                <label><input type="checkbox" value="6"> Other</label>
-                <textarea id="other" rows="5" cols="30" placeholder="Write down the other species that you currently breed..."></textarea>
-            </div>
-            <div id="submit-div">
-                <input type="submit" id="submit" value="Submit">
-            </div>
-        </form>
+    <canvas></canvas>
+    <div id="change-amount">
+        <label for="numer">Total orbs: <input id="numer" type="number"></label>
+        <button id="apply-amount-change">Accept</button>
     </div>
+    <script src="canvas.js"></script>
 </body>
 </html>
